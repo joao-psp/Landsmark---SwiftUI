@@ -28,7 +28,7 @@ struct LandmarkItem: View {
 
 struct LandmarkItem_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkItem(landmark: landmarks[0])
+        LandmarkItem(landmark: ModelData().landmarks[0])
             .previewLayout(.fixed(width: 300, height: 70))
     }
 }
