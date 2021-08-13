@@ -32,6 +32,9 @@
 		596780B226C4466800506CBE /* LandmarkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596780B126C4466800506CBE /* LandmarkItem.swift */; };
 		596780B726C447D600506CBE /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596780B626C447D600506CBE /* LandmarkList.swift */; };
 		596780BC26C448ED00506CBE /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596780BB26C448ED00506CBE /* LandmarkDetail.swift */; };
+		59DF618026C6D09300D579F0 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DF617F26C6D09300D579F0 /* CategoryHome.swift */; };
+		59DF618526C6D25500D579F0 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DF618426C6D25500D579F0 /* CategoryRow.swift */; };
+		59DF618A26C6D50B00D579F0 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DF618926C6D50B00D579F0 /* CategoryItem.swift */; };
 		59F1384226C5855D00E3C4CC /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F1384126C5855D00E3C4CC /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +87,9 @@
 		596780B126C4466800506CBE /* LandmarkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkItem.swift; sourceTree = "<group>"; };
 		596780B626C447D600506CBE /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		596780BB26C448ED00506CBE /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		59DF617F26C6D09300D579F0 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		59DF618426C6D25500D579F0 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		59DF618926C6D50B00D579F0 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		59F1384126C5855D00E3C4CC /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +165,7 @@
 		5967806226C42E7600506CBE /* Swift UI Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				596780A226C444D400506CBE /* Model */,
 				596780AD26C4462300506CBE /* Views */,
 				5967809B26C4404800506CBE /* Resources */,
 				5967806C26C42E7900506CBE /* Info.plist */,
@@ -216,7 +223,7 @@
 		596780AD26C4462300506CBE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				596780A226C444D400506CBE /* Model */,
+				59DF618E26C6DC3500D579F0 /* Category */,
 				595159DC26C5994500E1821E /* Badge */,
 				595159E726C5A62800E1821E /* Hikes */,
 				59F1384726C5865800E3C4CC /* Utils */,
@@ -224,6 +231,16 @@
 				5967806526C42E7600506CBE /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		59DF618E26C6DC3500D579F0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				59DF618926C6D50B00D579F0 /* CategoryItem.swift */,
+				59DF617F26C6D09300D579F0 /* CategoryHome.swift */,
+				59DF618426C6D25500D579F0 /* CategoryRow.swift */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		59F1384626C5864F00E3C4CC /* Landmarks */ = {
@@ -377,13 +394,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59DF618526C6D25500D579F0 /* CategoryRow.swift in Sources */,
 				5967806626C42E7600506CBE /* ContentView.swift in Sources */,
+				59DF618026C6D09300D579F0 /* CategoryHome.swift in Sources */,
 				595159ED26C5A62800E1821E /* HikeGraph.swift in Sources */,
 				595159D826C598A000E1821E /* Badge.swift in Sources */,
 				5967809726C4349C00506CBE /* MapView.swift in Sources */,
 				595159EC26C5A62800E1821E /* GraphCapsule.swift in Sources */,
 				5967806426C42E7600506CBE /* Swift_UI_TutorialApp.swift in Sources */,
 				59F1384226C5855D00E3C4CC /* FavoriteButton.swift in Sources */,
+				59DF618A26C6D50B00D579F0 /* CategoryItem.swift in Sources */,
 				595159EE26C5A62800E1821E /* HikeDetail.swift in Sources */,
 				595159C426C593F400E1821E /* HexagonParameters.swift in Sources */,
 				595159E326C5A5B800E1821E /* Hike.swift in Sources */,
